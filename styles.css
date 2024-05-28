@@ -126,3 +126,36 @@ footer {
     margin-right: 0.5em; /* Adds some space between the icon and the text */
 }
 
+.project {
+    width: 720px;
+}
+
+.project-content {
+    display: flex;
+}
+
+.project-array {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project-item {
+    width: calc(20% - 10px); /* Set width for each project item */
+    margin-bottom: 20px; /* Add space between project items */
+    text-align: center; /* Center align project items */
+}
+
+.project-item img {
+    width: 100px; /* Ensure images fill the width of their containers */
+    height: 100px; /* Set height to match width */
+    border-radius: 50%; /* Creates circular shape */
+    margin-bottom: 10px; /* Add space between image and description */
+}
+
+.project-item p {
+    margin: 0; /* Remove default margin for paragraphs */
+}
+
