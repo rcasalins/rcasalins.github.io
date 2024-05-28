@@ -114,3 +114,15 @@ footer {
     display: inline;
     margin: 0 5px;
 }
+
+.project h3 {
+    display: flex;
+    align-items: center; /* Aligns the items vertically */
+}
+
+.project h3 img {
+    width: 1em; /* Set the width of the icon to match the font size of the title */
+    height: 1em; /* Set the height of the icon to match the font size of the title */
+    margin-right: 0.5em; /* Adds some space between the icon and the text */
+}
+
