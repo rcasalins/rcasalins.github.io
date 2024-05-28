@@ -47,6 +47,51 @@ h2 {
     margin-bottom: 2em;
 }
 
+.contact-info {
+    margin-top: 2em;
+}
+
+.contact-info p, .contact-info ul {
+    margin: 0.5em 0;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    margin-top: 1em;
+}
+
+input, textarea, button {
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+button:hover {
+    background: #555;
+}
+
 footer {
     background: #333;
     color: #fff;
@@ -55,4 +100,14 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline;
+    margin: 0 5px;
 }

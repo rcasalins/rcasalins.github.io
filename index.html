@@ -37,7 +37,28 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>If you would like to get in touch, please email me at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
+        <p>If you would like to get in touch, please use the form below or reach out via email or phone.</p>
+        
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        
+        <div class="contact-info">
+            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <p>Phone: +123 456 7890</p>
+            <p>Follow me on social media:</p>
+            <ul class="social-media">
+                <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+                <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
     </section>
 
     <footer>
