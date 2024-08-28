@@ -1,29 +1,37 @@
+/* Estilos globales */
 body {
     background-color: #f0f0e4;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    color: #333;
 }
 
+/* Contenedor principal */
 .container {
     width: 720px;
     margin: 0 auto;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
 }
 
+/* Estilos del encabezado */
 header {
-    text-align: center; /* Center all titles in the header */
+    text-align: center;
     margin-bottom: 2em;
 }
 
 header h1 {
     margin: 0;
     color: #7b3c3c;
+    font-size: 2.5em; /* Tamaño de fuente mayor */
 }
 
+/* Navegación */
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -34,75 +42,81 @@ nav ul li {
 nav ul li a {
     color: #333;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
+nav ul li a:hover {
+    color: #7b3c3c;
+}
+
+/* Secciones */
 section {
     padding: 2em 0;
-    text-align: center; /* Center all titles in sections */
+    text-align: center;
 }
 
 h2 {
     color: #7b3c3c;
     border-bottom: 2px solid #7b3c3c;
     padding-bottom: 0.5em;
-    margin: 0 auto; /* Center titles horizontally */
+    font-size: 2em;
 }
 
+/* Proyectos */
 .project {
     margin-bottom: 2em;
 }
 
-.contact-info {
-    margin-top: 2em;
-}
-
-.contact-info p, .contact-info ul {
-    margin: 0.5em 0;
-}
-
-.contact-info a {
-    color: #333;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-form {
+.project-content {
     display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-}
-
-label {
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 1em;
 }
 
-input, textarea, button {
-    padding: 0.5em;
-    margin-top: 0.5em;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.project-item {
+    width: calc(20% - 10px);
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-button {
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-top: 1em;
-    padding: 0.5em;
+.project-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #7b3c3c; /* Borde para destacar */
+    transition: transform 0.3s; /* Animación al pasar el mouse */
 }
 
-button:hover {
-    background: #555;
+.project-item img:hover {
+    transform: scale(1.1); /* Efecto zoom al pasar el mouse */
+}
+
+.project-item p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Descripción de los proyectos */
+.project-description {
+    flex: 1;
+    margin-left: 20px;
+    text-align: left;
+}
+
+/* Secciones de Papers y Hobbies */
+#papers, #hobbies {
+    margin-top: 2em;
 }
 
 footer {
     text-align: center;
     padding: 1em 0;
+    background-color: #7b3c3c;
+    color: #fff;
+    font-size: 0.9em;
 }
 
 .social-media {
@@ -114,48 +128,3 @@ footer {
     display: inline;
     margin: 0 5px;
 }
-
-.project h3 {
-    display: flex;
-    align-items: center; /* Aligns the items vertically */
-}
-
-.project h3 img {
-    width: 1em; /* Set the width of the icon to match the font size of the title */
-    height: 1em; /* Set the height of the icon to match the font size of the title */
-    margin-right: 0.5em; /* Adds some space between the icon and the text */
-}
-
-.project {
-    width: 720px;
-}
-
-.project-content {
-    display: flex;
-}
-
-.project-array {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.project-item {
-    width: calc(20% - 10px); /* Set width for each project item */
-    margin-bottom: 20px; /* Add space between project items */
-    text-align: center; /* Center align project items */
-}
-
-.project-item img {
-    width: 100px; /* Ensure images fill the width of their containers */
-    height: 100px; /* Set height to match width */
-    border-radius: 50%; /* Creates circular shape */
-    margin-bottom: 10px; /* Add space between image and description */
-}
-
-.project-item p {
-    margin: 0; /* Remove default margin for paragraphs */
-}
-
