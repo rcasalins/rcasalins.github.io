@@ -128,3 +128,20 @@ footer {
     display: inline;
     margin: 0 5px;
 }
+
+/* Estilo para los títulos de los proyectos */
+.project h3 {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido del h3 */
+    justify-content: center; /* Centra horizontalmente el contenido del h3 */
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente para los títulos */
+}
+
+/* Estilo para los iconos dentro de los títulos */
+.project h3 img {
+    width: 30px; /* Fija el ancho del icono */
+    height: 30px; /* Fija la altura del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    vertical-align: middle; /* Alinea verticalmente los iconos con el texto */
+}
+
