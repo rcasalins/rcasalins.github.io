@@ -10,6 +10,7 @@ body {
     width: 720px;
     margin: 0 auto;
     padding: 20px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
 }
 
 header {
@@ -20,11 +21,13 @@ header {
 header h1 {
     margin: 0;
     color: #7b3c3c;
+    font-size: 3.0em; /* Tamaño de fuente mayor */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -35,6 +38,12 @@ nav ul li {
 nav ul li a {
     color: #333;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #7b3c3c;
 }
 
 section {
@@ -47,10 +56,25 @@ h2 {
     border-bottom: 2px solid #7b3c3c;
     padding-bottom: 0.5em;
     margin: 0 auto; /* Center titles horizontally */
+    font-size: 2em;
 }
 
 .project {
     margin-bottom: 2em;
+    width: 720px;
+}
+
+.project-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.project-item {
+    width: calc(20% - 10px);
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .contact-info {
@@ -104,6 +128,9 @@ button:hover {
 footer {
     text-align: center;
     padding: 1em 0;
+    background-color: #7b3c3c;
+    color: #fff;
+    font-size: 0.9em;
 }
 
 .social-media {
@@ -127,14 +154,6 @@ footer {
     margin-right: 0.5em; /* Adds some space between the icon and the text */
 }
 
-.project {
-    width: 720px;
-}
-
-.project-content {
-    display: flex;
-}
-
 .project-array {
     flex: 1;
     display: flex;
@@ -143,20 +162,33 @@ footer {
     align-items: flex-start;
 }
 
-.project-item {
-    width: calc(20% - 10px); /* Set width for each project item */
-    margin-bottom: 20px; /* Add space between project items */
-    text-align: center; /* Center align project items */
-}
-
 .project-item img {
     width: 100px; /* Ensure images fill the width of their containers */
     height: 100px; /* Set height to match width */
     border-radius: 50%; /* Creates circular shape */
     margin-bottom: 10px; /* Add space between image and description */
+    border: 2px solid #7b3c3c; /* Borde para destacar */
+    transition: transform 0.3s; /* Animación al pasar el mouse */
+}
+
+.project-item img:hover {
+    transform: scale(1.1); /* Efecto zoom al pasar el mouse */
 }
 
 .project-item p {
     margin: 0; /* Remove default margin for paragraphs */
+    font-size: 0.9em;
+}
+
+/* Descripción de los proyectos */
+.project-description {
+    flex: 1;
+    margin-left: 20px;
+    text-align: left;
+}
+
+/* Secciones de Papers y Hobbies */
+#papers, #hobbies {
+    margin-top: 2em;
 }
 
