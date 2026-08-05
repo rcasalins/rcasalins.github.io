@@ -45,8 +45,8 @@ if (navToggle) {
 
     for (let i = 0; i < colors.length; i++) {
       ctx.strokeStyle = colors[i];
-      ctx.globalAlpha = 0.16;
-      ctx.lineWidth = 1;
+      ctx.globalAlpha = 0.4;
+      ctx.lineWidth = 1.4;
       const phase = (t * speed + i * 7) % wavelength;
       for (let r = phase; r < 900; r += wavelength) {
         ctx.beginPath();

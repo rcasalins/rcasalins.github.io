@@ -208,10 +208,10 @@ section:last-of-type { border-bottom: none; }
   inset: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.55;
+  opacity: 0.9;
   pointer-events: none;
-  mask-image: radial-gradient(ellipse 60% 70% at 65% 30%, black 0%, transparent 75%);
-  -webkit-mask-image: radial-gradient(ellipse 60% 70% at 65% 30%, black 0%, transparent 75%);
+  mask-image: radial-gradient(ellipse 75% 85% at 65% 30%, black 0%, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse 75% 85% at 65% 30%, black 0%, transparent 85%);
 }
 
 .hero-inner {
