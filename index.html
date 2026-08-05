@@ -1,170 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Angel Casalins Hernandez</title>
-    <link rel="icon" type="image/png" href="https://s4.anilist.co/file/anilistcdn/user/avatar/large/b462363-3uYczCvxNNPf.png">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafael Casalins — Photonics Research</title>
+<meta name="description" content="Rafael Ángel Casalins Hernández — Engineering Physicist &amp; MSc student specializing in integrated photonics, inverse design, and layout automation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- All your content goes here -->
-        <header>
-            <h1>Rafael Ángel Casalins Hernández</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#papers">Papers</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>My name is Rafael Casalins,I am a mater student in engineering physics from Colombia.I love optics, programming and doing experiments with light. I am able to work in interdisciplinary groups with very different kinds of people. Because of my studies, I am able to model a wide range of phenomena using various software and move across engineering and physics topics. Currently, I am looking for exciting research work in optics and photonics with a high combination of experimental, theoretical and modeling.</p>
-            <img src="image1.jpeg" alt="Project 2" style="border-radius: 20%;width:50%;height:auto;">
-        </section>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-mark"><span class="dot"></span> R. CASALINS</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
 
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <div class="project">
-                <h3>
-                    <img src="python-icon.webp" alt="Python Icon"> Python Projects
-                </h3>
-
-                <div class="project-content">
-                    <div class="project-array">
-                        <div class="project-item">
-                            <a href="https://github.com/rcasalins/Generic_OpticsFiber_SimpleModeAnalysis" target="_blank"><img src="image1_python.png" alt="Project 1"></a>
-                            <p>Generic Optical Fiber - Simple Mode Analysis</p>
-                        </div>
-                        <div class="project-item">
-                            <a href="https://github.com/rcasalins/OpticFiber_CorningSMF28_ModeAnalysis/tree/main" target="_blank"><img src="image2_python.png" alt="Project 2"></a>
-                            <p>Optical Fiber - Corning SMF28 Mode Analysis</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="image3.png" alt="Project 2">
-                            <p>Description of Project 2</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="image4.png" alt="Project 2">
-                            <p>Description of Project 2</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="image5.png" alt="Project 2">
-                            <p>Description of Project 2</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <h3>
-                    <img src="wolfram_icon.png" alt="Wolfram Icon"> Wolfram Language Projects
-                </h3>
-
-                <div class="project-content">
-                    <div class="project-array">
-                        <div class="project-item">
-                            <a href="https://github.com/rcasalins" target="_blank"><img src="image1_wolfram.png" alt="Project 1"></a>
-                            <p>Colombian Geographics - Wolfram Mathematica</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="image2.png" alt="Project 2">
-                            <p>Description of Project 2</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="image3.png" alt="Project 2">
-                            <p>Description of Project 2</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="image4.png" alt="Project 2">
-                            <p>Description of Project 2</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="image5.png" alt="Project 2">
-                            <p>Description of Project 2</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <h3>
-                    <img src="c_icon.png" alt="C Icon"> C Projects
-                </h3>
-                <div class="project-content">
-                    <div class="project-array">
-                        <div class="project-item">
-                            <img src="image2.png" alt="Project 1">
-                            <p>Description of Project 1</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="image2.png" alt="Project 2">
-                            <p>Description of Project 2</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="image3.png" alt="Project 2">
-                            <p>Description of Project 2</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="image4.png" alt="Project 2">
-                            <p>Description of Project 2</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="image5.png" alt="Project 2">
-                            <p>Description of Project 2</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="papers">
-            <h2>Papers</h2>
-            <!-- Papers content here -->
-        </section>
-
-        <section id="hobbies">
-            <h2>Hobbies</h2>
-            <a href="https://data-card-for-spotify.herokuapp.com/card?user_id=y4l3vkzytfsaaxbhgqo9phd2h">
-                <img src="https://data-card-for-spotify.herokuapp.com/api/card?user_id=y4l3vkzytfsaaxbhgqo9phd2h" alt="Data Card for Spotify" width="600">
-            </a>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>If you would like to get in touch, please use the form below or reach out via email or phone.</p>
-            
-            <form action="https://formspree.io/f/xovarkbw" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-            
-            <div class="contact-info">
-                <p>Email: <a href="mailto:rafaelcasalins123@gmail.com">rafaelcasalins123@gmail.com</a></p>
-                <p>Phone: +57 3054388248</p>
-                <p>Follow me on social media:</p>
-                <ul class="social-media">
-                    <li><a href="https://www.linkedin.com/in/rcasalins/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/rcasalins" target="_blank">GitHub</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=i2BdD8kAAAAJ&hl=es&authuser=1" target="_blank">Google Scholar</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Your Name</p>
-        </footer>
+<header class="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Engineering Physicist · Photonics</p>
+    <h1>Rafael Ángel<br>Casalins Hernández</h1>
+    <p class="role">Integrated photonics, inverse design &amp; layout automation</p>
+    <hr class="spectrum-rule hero-rule">
+    <p class="hero-lede">MSc student bridging behavioral models with physical layouts — Python-based
+      inverse design, 3D electromagnetic simulation, and foundry-level tape-outs for nonlinear
+      integrated photonic circuits.</p>
+    <div class="hero-actions">
+      <a href="#publications" class="btn btn-primary">View publications</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
     </div>
+    <div class="hero-meta">
+      <span><strong>Based in</strong> Colombia</span>
+      <span><strong>ORCID</strong> 0000-0002-0485-0091</span>
+      <span><strong>Advisor</strong> Samuel F. Serna O. — CHIRP, Bridgewater State University</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-body">
+        <p class="eyebrow" style="margin-bottom:14px;">About</p>
+        <p>I'm a Physicist Engineer and Master's student specializing in integrated photonics,
+          layout automation, and inverse design. My work bridges behavioral models with physical
+          chip layouts — moving from custom Python frameworks, through 2D templates for rapid
+          prototyping, to high-fidelity 3D electromagnetic simulation and foundry-level tape-outs.</p>
+        <p>I love optics, programming, and running experiments with light. I work comfortably
+          across disciplines — with physicists, engineers, and fabrication teams — and I'm
+          currently looking for research opportunities in optics and photonics that combine
+          experimental, theoretical, and computational work.</p>
+      </div>
+      <div>
+        <div class="monogram">
+          <img src="assets/Profile.jpg" alt="Rafael Casalins speaking on a panel at Frontiers in Optics + Laser Science" loading="lazy">
+        </div>
+        <ul class="fact-list">
+          <li><span>Institution</span> <span>National University of Colombia</span></li>
+          <li><span>Program</span> <span>MSc, Engineering Physics</span></li>
+          <li><span>Languages</span> <span>Spanish (native), English</span></li>
+          <li><span>Email</span> <a href="mailto:rcasalins@unal.edu.co">rcasalins@unal.edu.co</a></li>
+          <li><span>ORCID</span> <a href="https://orcid.org/0000-0002-0485-0091" target="_blank" rel="noopener">0000-0002-0485-0091</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Research publications</p>
+        <h2>Papers &amp; proceedings</h2>
+        <p>Peer-reviewed and conference work on non-paraxial focusing, inverse-designed photonic
+          materials, and optics outreach.</p>
+      </div>
+
+      <div class="pub-group">
+        <div class="pub-group-label">Journal article</div>
+        <div class="pub">
+          <div class="pub-year">2026</div>
+          <div>
+            <h3 class="pub-title">Non-paraxial focusing by microlenses under arbitrary spatial coherence</h3>
+            <p class="pub-venue">Rafael A. Casalins-Hernández &amp; Román Castañeda — Óptica Pura y Aplicada, 59.1, p. 51225</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.7149/OPA.59.1.51225" target="_blank" rel="noopener">DOI: 10.7149/OPA.59.1.51225 ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-group">
+        <div class="pub-group-label">Conference proceedings</div>
+
+        <div class="pub">
+          <div class="pub-year">2025</div>
+          <div>
+            <h3 class="pub-title">Inverse Design for SiN and GeSbS</h3>
+            <p class="pub-venue">Rafael A. Casalins-Hernández et al. — Frontiers in Optics + Laser Science (FiO, LS), JTu4A.12</p>
+            <div class="pub-links">
+              <a href="https://opg.optica.org/abstract.cfm?URI=LS-2025-JTu4A.12" target="_blank" rel="noopener">Optica Publishing ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-year">2025</div>
+          <div>
+            <h3 class="pub-title">Non-paraxial focusing by microlenses</h3>
+            <p class="pub-venue">Rafael A. Casalins-Hernández &amp; Román Castañeda — Frontiers in Optics + Laser Science (FiO, LS), JTu5A.52</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1364/FIO.2025.JTu5A.52" target="_blank" rel="noopener">DOI: 10.1364/FIO.2025.JTu5A.52 ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-year">2023</div>
+          <div>
+            <h3 class="pub-title">Outreach experiments guide for an optic show to pre-college level by Medellín student chapter</h3>
+            <p class="pub-venue">Pablo Bedoya-Ríos et al. — ETOP 2023, p. 127230M</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1117/12.2666959" target="_blank" rel="noopener">DOI: 10.1117/12.2666959 ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-year">2023</div>
+          <div>
+            <h3 class="pub-title">Study on Quantum Entanglement Generation in GeSbS Chalcogenide Glass</h3>
+            <p class="pub-venue">Pablo Bedoya-Ríos et al. — Optica Quantum 2.0 Conference and Exhibition, QTh2A.5</p>
+            <div class="pub-links">
+              <a href="https://opg.optica.org/abstract.cfm?URI=QUANTUM-2023-QTh2A.5" target="_blank" rel="noopener">Optica Publishing ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Applied research</p>
+        <h2>Projects &amp; research groups</h2>
+        <p>End-to-end photonic design work, from full-wave simulation to fabrication-ready layouts,
+          alongside ongoing affiliations with three research groups.</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/PICFabricationGDSSchematic_FotonIA.png" alt="Fabrication-ready GDS schematic for the FOTON-IA photonic sensor layout" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Photonic IC Designer — FOTON-IA Project</h3>
+              <span class="card-period">Mar 2026 – Jul 2027</span>
+            </div>
+            <p class="card-tag">Ruta N &amp; G8 Group</p>
+            <ul>
+              <li>End-to-end design of integrated photonic sensors for real-time wastewater monitoring and energy recovery in the Aburrá Valley.</li>
+              <li>Full-wave EM simulations (FDTD/FEM) in Lumerical, COMSOL, and Meep to optimize sensor sensitivity.</li>
+              <li>Fabrication-ready GDS layouts via GDSfactory, adhering to foundry-specific DRC.</li>
+              <li>Multi-institutional collaboration with UdeA, ITM, UdeM, and UNAL.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/miniaturaOPA_FPIT.jpg" alt="Simulated non-paraxial focusing intensity pattern from the FPIT project" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Non-paraxial focusing at the integrated photonics scale</h3>
+              <span class="card-period">Jul 2025 – Jun 2026</span>
+            </div>
+            <p class="card-tag">FPIT · Project No. 5.276</p>
+            <ul>
+              <li>High-fidelity free-space simulations of light focusing through micro-nano lenses at the non-paraxial scale.</li>
+              <li>Evaluated focusing capabilities of micro-scale optical elements for next-generation photonic circuits.</li>
+              <li>Applied a specialized non-paraxial propagation algorithm developed with Prof. Román Castañeda's group.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/PICFabricationGDSSchematic_CHIRP.png" alt="Fabrication-ready GDS schematic for CHIRP nonlinear photonic circuits" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>CHIRP</h3>
+              <span class="card-period">Jul 2023 – present</span>
+            </div>
+            <p class="card-tag">Bridgewater State University · P.I. Samuel F. Serna O.</p>
+            <p>Development of devices using inverse-design methodologies to improve nonlinear
+              integrated photonic circuits.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/CoherenceFotonica.png" alt="Measured interference pattern and intensity profile used for spatial coherence characterization" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Fotónica y Opto-electrónica</h3>
+              <span class="card-period">Jul 2025 – present</span>
+            </div>
+            <p class="card-tag">National University of Colombia · P.I. Pedro Ignacio Torres</p>
+            <p>Experimental support in pulse width measurement, spatial coherence characterization,
+              and integrated photonic circuit design, under Dr. Rodrigo Acuña.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/ProcesamientoOpto-digital.png" alt="Simulated non-paraxial optical field for micro-nano lenses" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Procesamiento Opto-digital</h3>
+              <span class="card-period">Jul 2020 – Jun 2026</span>
+            </div>
+            <p class="card-tag">National University of Colombia · P.I. Jorge Garcia-Sucerquia</p>
+            <p>Evaluation of non-paraxial optical fields for micro-nano lenses, under Dr. Román Castañeda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Code &amp; simulation</p>
+        <h2>Open projects</h2>
+        <p>Python and Wolfram Language tools built for fiber-mode analysis and geographic modeling.</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-body">
+            <div class="motif" style="--mx:20%;--my:30%;--mx2:75%;--my2:35%;--mx3:50%;--my3:70%;" aria-hidden="true"></div>
+            <h3>Generic Optical Fiber — Simple Mode Analysis</h3>
+            <p>Python tooling for solving and visualizing guided-mode profiles of a generic step-index optical fiber.</p>
+            <div class="project-link-row">
+              <a href="https://github.com/rcasalins/Generic_OpticsFiber_SimpleModeAnalysis" target="_blank" rel="noopener">github ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <div class="motif" style="--mx:70%;--my:25%;--mx2:30%;--my2:65%;--mx3:55%;--my3:45%;" aria-hidden="true"></div>
+            <h3>Corning SMF-28 — Mode Analysis</h3>
+            <p>Mode-solving workflow applied to the industry-standard Corning SMF-28 single-mode fiber.</p>
+            <div class="project-link-row">
+              <a href="https://github.com/rcasalins/OpticFiber_CorningSMF28_ModeAnalysis" target="_blank" rel="noopener">github ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <div class="motif" style="--mx:40%;--my:60%;--mx2:65%;--my2:20%;--mx3:20%;--my3:20%;" aria-hidden="true"></div>
+            <h3>Colombian Geographics</h3>
+            <p>Geographic and geospatial modeling built in Wolfram Mathematica.</p>
+            <div class="project-link-row">
+              <a href="https://github.com/rcasalins" target="_blank" rel="noopener">github ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Academic journey</p>
+        <h2>Education &amp; teaching</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-period">Sep 2023 – Present</div>
+          <h3>MSc in Engineering Physics</h3>
+          <p class="tl-sub">National University of Colombia · Advisor: Samuel F. Serna O. (Bridgewater State University)</p>
+          <ul>
+            <li>Developing gradient-based inverse-design methodologies to optimize nonlinear integrated photonic circuits using custom Python frameworks.</li>
+            <li>Designed and submitted photonic circuits for a foundry-level tape-out with AIM Photonics (MIT collaboration) on a 220 nm SiN platform.</li>
+            <li>Built robust simulation workflows using 2D templates for rapid prototyping before scaling to high-fidelity 3D EM simulations in Tidy3D and Lumerical.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-period">Feb 2018 – Oct 2023</div>
+          <h3>BSc in Engineering Physics</h3>
+          <p class="tl-sub">National University of Colombia · Advisor: Román Castañeda</p>
+          <ul>
+            <li>Gained expertise in instrumentation and applied physics problem-solving.</li>
+            <li>Specialized in optics and photonics through Photonics and Optical Fibers, and Optical Coherence Theory.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-period">Sep 2024 – Jul 2026</div>
+          <h3>Assistant Professor</h3>
+          <p class="tl-sub">National University of Colombia</p>
+          <ul>
+            <li>Physics Laboratories for Oscillations, Waves and Optics — prepared and organized coursework, proposed new optics experiments.</li>
+            <li>Mechanical Physics Laboratories (Sep – Dec 2025) — organized classical mechanics coursework for undergraduates.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-period">Mar 2022 – Jun 2023</div>
+          <h3>Academic Tutor</h3>
+          <p class="tl-sub">National University of Colombia — Operations Research · Multi-variable Calculus</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Toolkit</p>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div>
+          <div class="skill-cat-label">Programming</div>
+          <div class="pill-row">
+            <span class="pill">Python (NumPy / SciPy)</span>
+            <span class="pill">Object-Oriented Design</span>
+            <span class="pill">C</span>
+            <span class="pill">Bash</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-cat-label">Simulation &amp; layout</div>
+          <div class="pill-row">
+            <span class="pill">Photonforge</span>
+            <span class="pill">Tidy3D</span>
+            <span class="pill">Lumerical</span>
+            <span class="pill">Meep</span>
+            <span class="pill">COMSOL Multiphysics</span>
+            <span class="pill">GDSfactory</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-cat-label">Firmware</div>
+          <div class="pill-row">
+            <span class="pill">STM32</span>
+            <span class="pill">ESP32</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-cat-label">Languages</div>
+          <div class="pill-row">
+            <span class="pill">Spanish — native</span>
+            <span class="pill">English — intermediate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="activities">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Community</p>
+        <h2>Memberships &amp; activities</h2>
+      </div>
+      <div class="activity-cols">
+        <div>
+          <h4>Memberships</h4>
+          <ul>
+            <li><strong>OPTICA</strong> Formerly OSA <span>Jun 2019 – present</span></li>
+            <li><strong>SPIE</strong> The International Society for Optics and Photonics <span>Jun 2019 – present</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Chapter roles</h4>
+          <ul>
+            <li><strong>Secretary</strong> Optics Student Chapter, OPTICA &amp; SPIE <span>2024 – 2025</span></li>
+            <li><strong>President</strong> Optics Student Chapter, OPTICA &amp; SPIE <span>2023</span></li>
+            <li><strong>Treasurer</strong> Optics Student Chapter, OPTICA &amp; SPIE <span>2022</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Symposiums</h4>
+          <ul>
+            <li><strong>10th Int'l Symposium "Optics &amp; its applications"</strong> ICTP <span>Dec 2022</span></li>
+            <li><strong>SubOptic Latam 2022</strong> SubOptic Foundation <span>Nov 2022</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Get in touch</p>
+        <h2>Contact</h2>
+        <p style="color:var(--text-secondary); margin-top:10px; max-width:44ch;">
+          Open to research collaborations, PhD opportunities, and conversations about
+          integrated photonics. Reach out directly or use the form.
+        </p>
+        <ul class="contact-list">
+          <li><span>Email</span> <a href="mailto:rcasalins@unal.edu.co">rcasalins@unal.edu.co</a></li>
+          <li><span>LinkedIn</span> <a href="https://www.linkedin.com/in/rcasalins/" target="_blank" rel="noopener">in/rcasalins</a></li>
+          <li><span>GitHub</span> <a href="https://github.com/rcasalins" target="_blank" rel="noopener">rcasalins</a></li>
+          <li><span>Scholar</span> <a href="https://scholar.google.com/citations?user=i2BdD8kAAAAJ&hl=es&authuser=1" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><span>ORCID</span> <a href="https://orcid.org/0000-0002-0485-0091" target="_blank" rel="noopener">0000-0002-0485-0091</a></li>
+        </ul>
+      </div>
+      <div>
+        <form action="https://formspree.io/f/xovarkbw" method="POST">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Rafael Casalins Hernández · Built with light in mind.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
